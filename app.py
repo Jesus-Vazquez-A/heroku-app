@@ -21,7 +21,7 @@ def UserInputs():
     gender = st.radio('Gender',('Male','Female'))
     
     
-    height = st.number_input('Mileage',min_value = 56.39,max_value = 76.70)
+    height = st.number_input('Height',min_value = 56.39,max_value = 76.70)
     
 
        
