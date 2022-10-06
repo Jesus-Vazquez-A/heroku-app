@@ -21,7 +21,7 @@ def UserInputs():
     gender = st.radio('Gender',('Male','Female'))
     
     
-    height = st.number_input('Height',min_value = 56.39,max_value = 76.70)
+    height = st.number_input('Height in inches',min_value = 56.39,max_value = 76.70)
     
 
        
@@ -44,7 +44,7 @@ st.cache(allow_output_mutation=True)
 
 def predict(new_data):
     
-    model = joblib.dump("model.pkl")
+    model = joblib.load("model.pkl")
     
     return model.predict(new_data)
 
