@@ -35,7 +35,9 @@ def preprocessing():
     
     gender = np.where(gender == 'Male',1,0)
     
-    return np.asarray([gender,height])
+    new_data = [gender,height]
+    
+    return np.asarray([new_data])
 
 
 
