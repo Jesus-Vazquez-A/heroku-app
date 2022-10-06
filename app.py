@@ -56,7 +56,7 @@ st.cache(allow_output_mutation=True)
 def main():
     
     st.subheader("""Predict Weight""")
-    st.image("img.jpeg")
+    st.image("img.jpg")
   
     new_data = preprocessing()
     
