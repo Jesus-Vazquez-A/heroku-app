@@ -65,6 +65,8 @@ def main():
     if st.button(label = 'Predict'):
         
         weight=predict(new_data)
+        weight = np.round(weight)
+        
         st.success(f'The estimated weight  is: $ {weight} pounds')
 
 
